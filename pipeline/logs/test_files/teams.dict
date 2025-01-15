@@ -1,0 +1,191 @@
+[
+    {
+        "name": "Collingwood",
+        "games": 2672,
+        "wins": 1612,
+        "draws": 30,
+        "losses": 1030,
+        "points_for": 232021,
+        "points_against": 206614
+    },
+    {
+        "name": "Carlton",
+        "games": 2624,
+        "wins": 1485,
+        "draws": 35,
+        "losses": 1104,
+        "points_for": 223986,
+        "points_against": 207230
+    },
+    {
+        "name": "Essendon",
+        "games": 2587,
+        "wins": 1432,
+        "draws": 37,
+        "losses": 1118,
+        "points_for": 223637,
+        "points_against": 209168
+    },
+    {
+        "name": "Geelong",
+        "games": 2573,
+        "wins": 1413,
+        "draws": 24,
+        "losses": 1136,
+        "points_for": 222630,
+        "points_against": 206004
+    },
+    {
+        "name": "Port Adelaide",
+        "games": 645,
+        "wins": 348,
+        "draws": 5,
+        "losses": 292,
+        "points_for": 58219,
+        "points_against": 56263
+    },
+    {
+        "name": "West Coast",
+        "games": 886,
+        "wins": 473,
+        "draws": 6,
+        "losses": 407,
+        "points_for": 81153,
+        "points_against": 78586
+    },
+    {
+        "name": "Richmond",
+        "games": 2392,
+        "wins": 1213,
+        "draws": 26,
+        "losses": 1153,
+        "points_for": 208614,
+        "points_against": 207729
+    },
+    {
+        "name": "Adelaide",
+        "games": 778,
+        "wins": 397,
+        "draws": 3,
+        "losses": 378,
+        "points_for": 72197,
+        "points_against": 68476
+    },
+    {
+        "name": "Brisbane Lions",
+        "games": 650,
+        "wins": 326,
+        "draws": 7,
+        "losses": 317,
+        "points_for": 60154,
+        "points_against": 59478
+    },
+    {
+        "name": "Hawthorn",
+        "games": 2107,
+        "wins": 1025,
+        "draws": 13,
+        "losses": 1069,
+        "points_for": 189211,
+        "points_against": 187552
+    },
+    {
+        "name": "Sydney",
+        "games": 2567,
+        "wins": 1237,
+        "draws": 25,
+        "losses": 1305,
+        "points_for": 211993,
+        "points_against": 213518
+    },
+    {
+        "name": "Greater Western Sydney",
+        "games": 301,
+        "wins": 138,
+        "draws": 4,
+        "losses": 159,
+        "points_for": 24593,
+        "points_against": 26622
+    },
+    {
+        "name": "Melbourne",
+        "games": 2535,
+        "wins": 1162,
+        "draws": 22,
+        "losses": 1351,
+        "points_for": 207068,
+        "points_against": 215827
+    },
+    {
+        "name": "Western Bulldogs",
+        "games": 2075,
+        "wins": 948,
+        "draws": 22,
+        "losses": 1105,
+        "points_for": 176327,
+        "points_against": 184378
+    },
+    {
+        "name": "Fitzroy",
+        "games": 1928,
+        "wins": 869,
+        "draws": 25,
+        "losses": 1034,
+        "points_for": 150313,
+        "points_against": 158526
+    },
+    {
+        "name": "Fremantle",
+        "games": 674,
+        "wins": 304,
+        "draws": 3,
+        "losses": 367,
+        "points_for": 56489,
+        "points_against": 60440
+    },
+    {
+        "name": "North Melbourne",
+        "games": 2093,
+        "wins": 899,
+        "draws": 18,
+        "losses": 1176,
+        "points_for": 181700,
+        "points_against": 195626
+    },
+    {
+        "name": "St Kilda",
+        "games": 2504,
+        "wins": 984,
+        "draws": 27,
+        "losses": 1493,
+        "points_for": 193822,
+        "points_against": 217990
+    },
+    {
+        "name": "Brisbane Bears",
+        "games": 222,
+        "wins": 72,
+        "draws": 2,
+        "losses": 148,
+        "points_for": 19718,
+        "points_against": 24385
+    },
+    {
+        "name": "Gold Coast",
+        "games": 305,
+        "wins": 89,
+        "draws": 2,
+        "losses": 214,
+        "points_for": 22765,
+        "points_against": 29312
+    },
+    {
+        "name": "University",
+        "games": 126,
+        "wins": 27,
+        "draws": 2,
+        "losses": 97,
+        "points_for": 6181,
+        "points_against": 9067
+    }
+]
