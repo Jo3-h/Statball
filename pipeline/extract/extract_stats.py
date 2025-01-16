@@ -1,13 +1,16 @@
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup as bs
-from config import generate_entity_id
+from config import generate_entity_id, TESTING
 
 def extract_stats(matches_data: pd.DataFrame) -> list:
 
     stats_data = []
 
-    for index, match in matches_data.iterrows():
+    if TESTING: 
+        matches_data = matches_data.head(5)
+
+    for _, match in matches_data.iterrows():
 
         url = match['stats_link']
         url = url.replace('..', 'https://afltables.com/afl/')
@@ -21,7 +24,8 @@ def extract_stats(matches_data: pd.DataFrame) -> list:
         try:
             team_name = tables[2].find('th').text.split(' Match')[0]
         except:
-            print('Error: ', url)
+            if TESTING:
+                print('Error: ', url)
         try:
             for row in tables[2].find('tbody').find_all('tr'):
                 player_stats = {}
@@ -47,8 +51,8 @@ def extract_stats(matches_data: pd.DataFrame) -> list:
                     player_stats['free_kicks_for'] = row.find_all('td')[14].text
                     player_stats['free_kicks_against'] = row.find_all('td')[15].text
                     player_stats['brownlow_votes'] = row.find_all('td')[16].text
-                    player_stats['contested_possesions'] = row.find_all('td')[17].text
-                    player_stats['uncontested_possesions'] = row.find_all('td')[18].text
+                    player_stats['contested_possessions'] = row.find_all('td')[17].text
+                    player_stats['uncontested_possessions'] = row.find_all('td')[18].text
                     player_stats['contested_marks'] = row.find_all('td')[19].text
                     player_stats['marks_inside_50'] = row.find_all('td')[20].text
                     player_stats['one_percenters'] = row.find_all('td')[21].text
@@ -61,15 +65,15 @@ def extract_stats(matches_data: pd.DataFrame) -> list:
 
                 stats_data.append(player_stats)
         except Exception as e:
-            print('Error: ', e)
-            print('url: ', url)
+            if TESTING:
+                print(f"Error: {e} -> url: {url}")
 
         # extract the away team stats
-        # extract the home team stats
         try:
             team_name = tables[4].find('th').text.split(' Match')[0]
         except:
-            print('Error: ', url)
+            if TESTING:
+                print('Error: ', url)
         try:
             for row in tables[4].find('tbody').find_all('tr'):
                 player_stats = {}
@@ -95,8 +99,8 @@ def extract_stats(matches_data: pd.DataFrame) -> list:
                     player_stats['free_kicks_for'] = row.find_all('td')[14].text
                     player_stats['free_kicks_against'] = row.find_all('td')[15].text
                     player_stats['brownlow_votes'] = row.find_all('td')[16].text
-                    player_stats['contested_possesions'] = row.find_all('td')[17].text
-                    player_stats['uncontested_possesions'] = row.find_all('td')[18].text
+                    player_stats['contested_possessions'] = row.find_all('td')[17].text
+                    player_stats['uncontested_possessions'] = row.find_all('td')[18].text
                     player_stats['contested_marks'] = row.find_all('td')[19].text
                     player_stats['marks_inside_50'] = row.find_all('td')[20].text
                     player_stats['one_percenters'] = row.find_all('td')[21].text
@@ -109,8 +113,8 @@ def extract_stats(matches_data: pd.DataFrame) -> list:
 
                 stats_data.append(player_stats)
         except Exception as e:
-            print('Error: ', e)
-            print('url: ', url)
+            if TESTING:
+                print(f"Error: {e} -> url: {url}")
 
 
     return stats_data

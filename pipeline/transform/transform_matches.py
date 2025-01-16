@@ -20,6 +20,11 @@ def transform_matches(matches_data: dict) -> pd.DataFrame:
     matches_df['match_id'] = matches_df['match_id_seed'].apply(lambda x: generate_entity_id(x))
     matches_df.drop(columns=['match_id_seed'], inplace=True)
 
+    # generate home/away team_id to use as FOREIGN KEY
+    matches_df['home_team_id'] = matches_df['home_team'].apply(lambda x: generate_entity_id(x))
+    matches_df['away_team_id'] = matches_df['away_team'].apply(lambda x: generate_entity_id(x))
+    matches_df.drop(columns=['home_team', 'away_team'], inplace=True)
+
     # create column for home_win
     matches_df['home_win'] = (matches_df['home_score'] > matches_df['away_score']).astype(bool)
 

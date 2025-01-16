@@ -19,7 +19,7 @@ def extract_teams():
             'games': int(cols[1].text.strip()),
             'wins': int(cols[2].text.strip()),
             'draws': int(cols[3].text.strip()),
-            'losses': int(cols[4].text.strip()),
+            'loses': int(cols[4].text.strip()),
             'points_for': int(cols[7].text.strip()),
             'points_against': int(cols[10].text.strip()),
         }

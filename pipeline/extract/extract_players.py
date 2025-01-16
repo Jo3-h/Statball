@@ -14,7 +14,7 @@ def extract_players():
         
         team = table.find('a').text
         rows = table.find_all('tbody')[0].find_all('tr')
-        for row in rows[0:1]:
+        for row in rows:
             player = {}
             player['team'] = team
             player['number'] = row.find_all('td')[0].text
@@ -25,6 +25,8 @@ def extract_players():
 
 
             response = requests.get(f'https://afltables.com/afl/stats/players/{name[1][0]}/{name[1]}_{name[0]}.html')
+            if response.status_code != 200:
+                continue
             soup = bs(response.text, 'html.parser')
 
                         # Extract data following specific <b> elements
