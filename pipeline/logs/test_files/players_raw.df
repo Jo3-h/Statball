@@ -1,0 +1,31 @@
+Column Types:
+team          object
+number        object
+name          object
+first_name    object
+last_name     object
+born          object
+debut         object
+last          object
+height        object
+weight        object
+
+team                   number               name                 first_name           last_name            born                 debut                last                 height               weight              
+              Adelaide 29                            Laird, Rory    Rory                       Laird       29-Dec-1993 (        19y 113d             30y 239d)            177 cm               81 kg               
+        Brisbane Lions  9                          Neale, Lachie  Lachie                       Neale       24-May-1993 (        18y 332d             31y 127d)            177 cm               85 kg               
+               Carlton  9                        Cripps, Patrick Patrick                      Cripps       18-Mar-1995 (         19y 25d             29y 173d)            195 cm               92 kg               
+           Collingwood 35                           Daicos, Nick    Nick                      Daicos        3-Jan-2003 (         19y 74d             21y 233d)            184 cm               73 kg               
+              Essendon 37                            Martin, Nic     Nic                      Martin        3-Apr-2001 (        20y 350d             23y 143d)            190 cm               86 kg               
+             Fremantle  3                          Serong, Caleb   Caleb                      Serong        9-Feb-2001 (        19y 139d             23y 198d)            178 cm               83 kg               
+               Geelong  9                            Holmes, Max     Max                      Holmes       29-Aug-2002 (        18y 219d              22y 23d)            189 cm               74 kg               
+            Gold Coast  3                          Flanders, Sam     Sam                    Flanders       24-Jul-2001 (         19y 19d              23y 31d)            182 cm               81 kg               
+Greater Western Sydney 12                             Green, Tom     Tom                       Green       13-Jan-1909 (        26y 223d             26y 237d)            178 cm               74 kg               
+              Hawthorn  3                          Newcombe, Jai     Jai                    Newcombe        2-Aug-2001 (        19y 313d              23y 42d)            186 cm               85 kg               
+             Melbourne 24                          Rivers, Trent   Trent                      Rivers       30-Jul-2001 (        18y 319d              23y 24d)            188 cm               85 kg               
+       North Melbourne  9                   Davies-Uniacke, Luke    Luke              Davies-Uniacke        8-Jun-1999 (        18y 289d              25y 77d)            188 cm               85 kg               
+         Port Adelaide  9                           Butters, Zak     Zak                     Butters        8-Sep-2000 (        18y 196d              24y 12d)            181 cm               71 kg               
+              Richmond 17                          Rioli, Daniel  Daniel                       Rioli       16-Apr-1997 (        18y 343d             27y 130d)            179 cm               76 kg               
+              St Kilda 35                         Sinclair, Jack    Jack                    Sinclair       12-Feb-1995 (         20y 52d             29y 195d)            181 cm               81 kg               
+                Sydney 21                          Gulden, Errol   Errol                      Gulden       18-Jul-2002 (        18y 245d              22y 72d)            175 cm               75 kg               
+            West Coast 11                             Kelly, Tim     Tim                       Kelly       26-Jul-1994 (        23y 242d              30y 29d)            182 cm               81 kg               
+      Western Bulldogs  1                          Treloar, Adam    Adam                     Treloar        9-Mar-1993 (         19y 37d             31y 181d)            182 cm               89 kg               

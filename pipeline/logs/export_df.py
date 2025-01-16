@@ -13,6 +13,13 @@ def export_df(df: pd.DataFrame, name: str):
         os.makedirs(LOG_DIR)
 
     with open(f'{LOG_DIR}/{name}.df', 'w') as file:
+        # Write meta information at the top of the file
+        meta_info = df.dtypes.to_string()
+        file.write("Column Types:\n")
+        file.write(meta_info)
+        file.write("\n\n")
+
+        # Write the DataFrame to the file
         file.write(df.to_string(index=False, col_space=20, justify='left'))
 
 

@@ -30,6 +30,10 @@ def data_pipeline():
     players_df = transform_players(players_data)
     matches_df = transform_matches(matches_data)
 
+    # extract stats data after match_id have been generated in transform_matches()
+    stats_data = extract_stats(matches_df)
+    export_dict(stats_data, 'stats')
+
     # export dataframe objects
     export_df(teams_df, 'teams')
     export_df(players_df, 'players')

@@ -33,7 +33,9 @@ def extract_matches():
                     match['away_score'] = game.find_all('tr')[1].find_all('td')[2].text
                     match['home_score_full'] = game.find_all('tr')[0].find_all('td')[1].text
                     match['away_score_full'] = game.find_all('tr')[1].find_all('td')[1].text
-                    match['venue'] = game.find('tr').find_all('td')[3].find('a').text
+                    match['date'] = game.find('tr').find_all('td')[3].text
+                    match['stats_link'] = game.find_all('tr')[1].find_all('td')[3].find('a')['href']
+                    match['venue'] = game.find_all('tr')[0].find_all('td')[3].find('a').text
                     round_matches.append(match)
 
             except:
