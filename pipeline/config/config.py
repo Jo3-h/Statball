@@ -18,7 +18,7 @@ LOG_DIR = "logs/test_files"
 
 # configuration for urls for data extraction
 TEAMS_URL = "https://afltables.com/afl/teams/allteams/overall_wl.html"
-PLAYERS_URL = "https://afltables.com/afl/stats/2024.html#1"
+PLAYERS_URL = "https://afltables.com/afl/stats/2025.html#1"
 
 # configuration for database connection
 DB_USERNAME = os.getenv("DB_USERNAME")

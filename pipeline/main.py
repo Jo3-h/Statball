@@ -65,7 +65,7 @@ def main():
 
     # parse command line arguments
     parser = ap.ArgumentParser(description="Run the data integration pipeline or describe the database.")
-    parser.add_argument('--action', type=str, choices=['pipeline', 'query'], required=True,
+    parser.add_argument('--action', type=str, choices=['pipeline', 'query', 'advanced_stats'], required=True,
                         help="Specify 'pipeline' to run the full pipeline")
     args = parser.parse_args()
 
@@ -73,6 +73,8 @@ def main():
         data_pipeline()
     elif args.action == "query":
         test_query()
+    elif args.action == "advanced_stats":
+        advanced_stats()
     else:
         print('action not defined')
 

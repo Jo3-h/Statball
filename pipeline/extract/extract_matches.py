@@ -7,7 +7,7 @@ def extract_matches():
     match_data = []
     current_year = datetime.now().year
 
-    for year in range(2021, current_year):
+    for year in range(2010, current_year):
 
         url = f"https://afltables.com/afl/seas/{year}.html"
         response = requests.get(url)
