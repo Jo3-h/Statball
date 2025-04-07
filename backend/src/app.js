@@ -20,9 +20,12 @@ app.use((err, req, res, next) => {
 });
 
 // Import Routes
-const testRoutes = require("./routes/test");
+const testRoutes = require("./routes/testRoute");
+const queryRoutes = require("./routes/queryRoute");
 
 // Use Routes
+app.use("/test", testRoutes);
+app.use("/", queryRoutes);
 
 // Export the Application
 module.exports = app;

@@ -11,3 +11,5 @@ router.post("/api/query", async (req, res) => {
   logger.info("Received query: ", question);
   res.status(200).json({ message: "Query received", question });
 });
+
+module.exports = router;
