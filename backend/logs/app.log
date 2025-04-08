@@ -1,3 +1,200 @@
 2025-04-07T10:52:56.597Z [info] StatBall API Server is running on port 3000
 2025-04-07T10:54:16.552Z [info] StatBall API Server is running on port 3000
 2025-04-07T10:54:22.048Z [info] StatBall API Server is running on port 3000
+2025-04-08T03:43:51.728Z [info] StatBall API Server is running on port 3000
+2025-04-08T03:44:14.214Z [info] StatBall API Server is running on port 3000
+2025-04-08T03:44:18.480Z [info] StatBall API Server is running on port 3000
+2025-04-08T03:44:42.767Z [info] StatBall API Server is running on port 3000
+2025-04-08T03:44:47.830Z [info] StatBall API Server is running on port 3000
+2025-04-08T03:44:51.059Z [info] StatBall API Server is running on port 3000
+2025-04-08T03:45:36.255Z [info] StatBall API Server is running on port 3000
+2025-04-08T03:45:43.053Z [info] StatBall API Server is running on port 3000
+2025-04-08T03:45:47.840Z [info] StatBall API Server is running on port 3000
+2025-04-08T03:45:58.327Z [info] StatBall API Server is running on port 3000
+2025-04-08T03:46:55.184Z [info] StatBall API Server is running on port 3000
+2025-04-08T03:47:02.155Z [info] StatBall API Server is running on port undefined
+2025-04-08T03:47:39.795Z [info] StatBall API Server is running on port 8000
+2025-04-08T03:47:47.402Z [info] StatBall API Server is running on port 8000
+2025-04-08T03:48:51.077Z [info] ::1 - - [08/Apr/2025:03:48:51 +0000] "POST /api/query HTTP/1.1" 500 1651 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+2025-04-08T03:50:32.356Z [info] StatBall API Server is running on port 8000
+2025-04-08T03:50:37.056Z [info] Received query: 
+2025-04-08T03:50:37.070Z [info] ::1 - - [08/Apr/2025:03:50:37 +0000] "POST /api/query HTTP/1.1" 200 28 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+2025-04-08T03:50:56.648Z [info] Received query: 
+2025-04-08T03:50:56.650Z [info] ::1 - - [08/Apr/2025:03:50:56 +0000] "POST /api/query HTTP/1.1" 200 28 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+2025-04-08T03:51:57.114Z [info] Received query: 
+2025-04-08T03:51:57.119Z [info] ::1 - - [08/Apr/2025:03:51:57 +0000] "POST /api/query HTTP/1.1" 200 28 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+2025-04-08T03:52:35.101Z [info] Received query: 
+2025-04-08T03:52:35.107Z [info] ::1 - - [08/Apr/2025:03:52:35 +0000] "POST /api/query HTTP/1.1" 200 28 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+2025-04-08T03:53:28.683Z [info] StatBall API Server is running on port 8000
+2025-04-08T03:53:31.378Z [info] ::1 - - [08/Apr/2025:03:53:31 +0000] "POST /api/query HTTP/1.1" 500 1651 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+2025-04-08T03:53:58.370Z [info] StatBall API Server is running on port 8000
+2025-04-08T03:54:01.381Z [info] ::1 - - [08/Apr/2025:03:54:01 +0000] "POST /api/query HTTP/1.1" 500 1651 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+2025-04-08T06:17:58.428Z [info] StatBall API Server is running on port 8000
+2025-04-08T06:18:51.464Z [info] StatBall API Server is running on port 8000
+2025-04-08T06:19:08.255Z [info] StatBall API Server is running on port 8000
+2025-04-08T06:19:37.095Z [info] StatBall API Server is running on port 8000
+2025-04-08T06:20:09.341Z [info] Incoming Request: POST /api/query
+2025-04-08T06:20:09.346Z [info] Headers: {"host":"localhost:8000","connection":"keep-alive","content-length":"19","sec-ch-ua-platform":"\"macOS\"","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36","sec-ch-ua":"\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"","content-type":"text/plain;charset=UTF-8","sec-ch-ua-mobile":"?0","accept":"*/*","origin":"http://localhost:5173","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:5173/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
+2025-04-08T06:20:09.382Z [info] ::1 - - [08/Apr/2025:06:20:09 +0000] "POST /api/query HTTP/1.1" 500 1651 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+2025-04-08T06:21:53.212Z [info] StatBall API Server is running on port 8000
+2025-04-08T06:22:24.484Z [info] Incoming Request:
+2025-04-08T06:22:24.486Z [info]   Method: POST
+2025-04-08T06:22:24.486Z [info]   URL: /api/query
+2025-04-08T06:22:24.486Z [info]   Headers:
+2025-04-08T06:22:24.487Z [info] {
+  "host": "localhost:8000",
+  "connection": "keep-alive",
+  "content-length": "19",
+  "sec-ch-ua-platform": "\"macOS\"",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+  "sec-ch-ua": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"",
+  "content-type": "text/plain;charset=UTF-8",
+  "sec-ch-ua-mobile": "?0",
+  "accept": "*/*",
+  "origin": "http://localhost:5173",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "http://localhost:5173/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+}
+2025-04-08T06:22:24.498Z [info] ::1 - - [08/Apr/2025:06:22:24 +0000] "POST /api/query HTTP/1.1" 500 1651 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+2025-04-08T06:26:51.201Z [info] StatBall API Server is running on port 8000
+2025-04-08T06:26:55.571Z [info] Incoming Request - POST /api/query
+
+    Headers : {
+  "host": "localhost:8000",
+  "connection": "keep-alive",
+  "content-length": "19",
+  "sec-ch-ua-platform": "\"macOS\"",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+  "sec-ch-ua": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"",
+  "content-type": "text/plain;charset=UTF-8",
+  "sec-ch-ua-mobile": "?0",
+  "accept": "*/*",
+  "origin": "http://localhost:5173",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "http://localhost:5173/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+}
+
+    Body : no request body
+
+    
+2025-04-08T06:26:55.583Z [info] ::1 - - [08/Apr/2025:06:26:55 +0000] "POST /api/query HTTP/1.1" 500 1651 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+2025-04-08T06:28:30.533Z [info] Incoming Request - POST /api/query
+
+    Headers : {
+  "host": "localhost:8000",
+  "connection": "keep-alive",
+  "content-length": "19",
+  "sec-ch-ua-platform": "\"macOS\"",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+  "sec-ch-ua": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"",
+  "content-type": "application/json",
+  "sec-ch-ua-mobile": "?0",
+  "accept": "*/*",
+  "origin": "http://localhost:5173",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "http://localhost:5173/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+}
+
+    Body : no request body
+
+    
+2025-04-08T06:28:30.535Z [info] Received query: 
+2025-04-08T06:28:30.539Z [info] ::1 - - [08/Apr/2025:06:28:30 +0000] "POST /api/query HTTP/1.1" 200 46 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+2025-04-08T06:46:27.361Z [info] Incoming Request - POST /api/query
+
+    Headers : {
+  "host": "localhost:8000",
+  "connection": "keep-alive",
+  "content-length": "19",
+  "sec-ch-ua-platform": "\"macOS\"",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+  "sec-ch-ua": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"",
+  "content-type": "application/json",
+  "sec-ch-ua-mobile": "?0",
+  "accept": "*/*",
+  "origin": "http://localhost:5173",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "http://localhost:5173/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+}
+
+    Body : no request body
+
+    
+2025-04-08T06:46:27.363Z [info] Received query: 
+2025-04-08T06:46:27.367Z [info] ::1 - - [08/Apr/2025:06:46:27 +0000] "POST /api/query HTTP/1.1" 200 46 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+2025-04-08T06:47:17.915Z [info] StatBall API Server is running on port 8000
+2025-04-08T06:47:34.010Z [info] StatBall API Server is running on port 8000
+2025-04-08T06:47:39.295Z [info] Incoming Request - POST /api/query
+Headers : {
+  "host": "localhost:8000",
+  "connection": "keep-alive",
+  "content-length": "19",
+  "sec-ch-ua-platform": "\"macOS\"",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+  "sec-ch-ua": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"",
+  "content-type": "application/json",
+  "sec-ch-ua-mobile": "?0",
+  "accept": "*/*",
+  "origin": "http://localhost:5173",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "http://localhost:5173/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+}
+
+    Body : {
+  "question": "test"
+}
+
+    
+2025-04-08T06:47:39.297Z [info] Received query: 
+2025-04-08T06:47:39.305Z [info] ::1 - - [08/Apr/2025:06:47:39 +0000] "POST /api/query HTTP/1.1" 200 46 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+2025-04-08T06:48:47.234Z [info] StatBall API Server is running on port 8000
+2025-04-08T06:48:55.001Z [info] Incoming Request - POST /api/query
+Headers : {
+  "host": "localhost:8000",
+  "connection": "keep-alive",
+  "content-length": "19",
+  "sec-ch-ua-platform": "\"macOS\"",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+  "sec-ch-ua": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"",
+  "content-type": "application/json",
+  "sec-ch-ua-mobile": "?0",
+  "accept": "*/*",
+  "origin": "http://localhost:5173",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "http://localhost:5173/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+}
+
+    Body : {
+  "question": "test"
+}
+
+    
+2025-04-08T06:48:55.003Z [info] Received query: test
+2025-04-08T06:48:55.009Z [info] ::1 - - [08/Apr/2025:06:48:55 +0000] "POST /api/query HTTP/1.1" 200 46 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+2025-04-08T06:53:11.362Z [info] StatBall API Server is running on port 8000
+2025-04-08T06:54:09.055Z [info] StatBall API Server is running on port 8000
+2025-04-08T06:54:31.626Z [info] StatBall API Server is running on port 8000

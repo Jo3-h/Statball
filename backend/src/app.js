@@ -4,6 +4,7 @@ const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
+const requestLogger = require("./config/requestLogger");
 const logger = require("./config/logger");
 
 const app = express();
@@ -11,6 +12,8 @@ const app = express();
 // Define middleware
 app.use(cors());
 app.use(bodyParser.json());
+app.use(express.json());
+app.use(requestLogger);
 app.use(
   morgan("combined", { stream: { write: (msg) => logger.info(msg.trim()) } })
 );
