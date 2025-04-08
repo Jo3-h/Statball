@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
@@ -8,8 +6,12 @@ function App() {
 
   const processQuery = async () => {
     try {
+      console.log("Processing query:", query);
       const response = await fetch("http://localhost:8000/api/query", {
         method: "POST",
+        headers: {
+          "Content-Type": "application/json", // Set the Content-Type header
+        },
         body: JSON.stringify({ question: query }),
       });
 
@@ -35,6 +37,8 @@ function App() {
           <textarea
             className="w-full h-full bg-yellow-100 flex align-middle justify-center text-center rounded-md"
             placeholder="  Query AFL Data"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
           ></textarea>
           <button className="" onClick={processQuery}></button>
         </div>
