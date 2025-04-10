@@ -198,3 +198,340 @@ Headers : {
 2025-04-08T06:53:11.362Z [info] StatBall API Server is running on port 8000
 2025-04-08T06:54:09.055Z [info] StatBall API Server is running on port 8000
 2025-04-08T06:54:31.626Z [info] StatBall API Server is running on port 8000
+2025-04-08T07:03:56.829Z [info] StatBall API Server is running on port 8000
+2025-04-08T07:04:00.750Z [info] Incoming Request - POST /api/query
+Headers : {
+  "content-type": "application/json",
+  "user-agent": "PostmanRuntime/7.43.3",
+  "accept": "*/*",
+  "postman-token": "ea7d1b61-1ed6-4f43-92fe-fedecc7f1d42",
+  "host": "localhost:8000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "31",
+  "cookie": "session=b8fb9dad-3c2f-434f-8f80-2f7ec8107c31.OzPpiHHEmZLn9Fr6pRmH3e4z3R8"
+}
+
+    Body : {
+  "question": "test query"
+}
+
+    
+2025-04-08T07:04:00.751Z [info] Received query: test query
+2025-04-08T07:04:00.755Z [info] ::1 - - [08/Apr/2025:07:04:00 +0000] "POST /api/query HTTP/1.1" 200 52 "-" "PostmanRuntime/7.43.3"
+2025-04-09T07:27:07.140Z [info] StatBall API Server is running on port 8000
+2025-04-09T07:27:11.504Z [info] Incoming Request - POST /api/query
+Headers : {
+  "content-type": "application/json",
+  "user-agent": "PostmanRuntime/7.43.3",
+  "accept": "*/*",
+  "postman-token": "56ba0a5f-394c-48f3-8d1f-72305f8a8d9f",
+  "host": "localhost:8000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "31",
+  "cookie": "session=b8fb9dad-3c2f-434f-8f80-2f7ec8107c31.OzPpiHHEmZLn9Fr6pRmH3e4z3R8"
+}
+
+    Body : {
+  "question": "test query"
+}
+
+    
+2025-04-09T07:27:11.505Z [info] Received query: test query
+2025-04-09T07:27:11.515Z [info] ::1 - - [09/Apr/2025:07:27:11 +0000] "POST /api/query HTTP/1.1" 500 1607 "-" "PostmanRuntime/7.43.3"
+2025-04-09T07:28:20.182Z [info] StatBall API Server is running on port 8000
+2025-04-09T07:28:22.885Z [info] Incoming Request - POST /api/query
+Headers : {
+  "content-type": "application/json",
+  "user-agent": "PostmanRuntime/7.43.3",
+  "accept": "*/*",
+  "postman-token": "7074d6b4-963b-4e4b-be15-bebd017cd1ab",
+  "host": "localhost:8000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "31",
+  "cookie": "session=b8fb9dad-3c2f-434f-8f80-2f7ec8107c31.OzPpiHHEmZLn9Fr6pRmH3e4z3R8"
+}
+
+    Body : {
+  "question": "test query"
+}
+
+    
+2025-04-09T07:28:22.886Z [info] Received query: test query
+2025-04-09T07:28:22.888Z [info] ::1 - - [09/Apr/2025:07:28:22 +0000] "POST /api/query HTTP/1.1" 500 1593 "-" "PostmanRuntime/7.43.3"
+2025-04-09T07:28:46.921Z [info] StatBall API Server is running on port 8000
+2025-04-09T07:28:49.310Z [info] Incoming Request - POST /api/query
+Headers : {
+  "content-type": "application/json",
+  "user-agent": "PostmanRuntime/7.43.3",
+  "accept": "*/*",
+  "postman-token": "0a673fd9-d162-41a1-bae2-84bf815fc016",
+  "host": "localhost:8000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "31",
+  "cookie": "session=b8fb9dad-3c2f-434f-8f80-2f7ec8107c31.OzPpiHHEmZLn9Fr6pRmH3e4z3R8"
+}
+
+    Body : {
+  "question": "test query"
+}
+
+    
+2025-04-09T07:28:49.310Z [info] Received query: test query
+2025-04-09T07:28:52.064Z [error] Failed to generate query from question!
+2025-04-09T07:28:52.068Z [info] ::1 - - [09/Apr/2025:07:28:52 +0000] "POST /api/query HTTP/1.1" 400 70 "-" "PostmanRuntime/7.43.3"
+2025-04-09T07:29:25.060Z [info] Incoming Request - POST /api/query
+Headers : {
+  "content-type": "application/json",
+  "user-agent": "PostmanRuntime/7.43.3",
+  "accept": "*/*",
+  "postman-token": "47d85609-173b-4168-a37a-78de36130412",
+  "host": "localhost:8000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "92",
+  "cookie": "session=b8fb9dad-3c2f-434f-8f80-2f7ec8107c31.OzPpiHHEmZLn9Fr6pRmH3e4z3R8"
+}
+
+    Body : {
+  "question": "How many disposals did Patrick Dangerfield get in his most recent game?"
+}
+
+    
+2025-04-09T07:29:25.061Z [info] Received query: How many disposals did Patrick Dangerfield get in his most recent game?
+2025-04-09T07:29:26.081Z [error] Failed to generate query from question!
+2025-04-09T07:29:26.082Z [info] ::1 - - [09/Apr/2025:07:29:26 +0000] "POST /api/query HTTP/1.1" 400 70 "-" "PostmanRuntime/7.43.3"
+2025-04-09T07:30:46.245Z [info] StatBall API Server is running on port 8000
+2025-04-09T07:31:35.858Z [info] StatBall API Server is running on port 8000
+2025-04-09T07:33:30.137Z [info] StatBall API Server is running on port 8000
+2025-04-09T07:33:54.373Z [info] StatBall API Server is running on port 8000
+2025-04-09T07:34:11.042Z [info] Incoming Request - POST /api/query
+Headers : {
+  "content-type": "application/json",
+  "user-agent": "PostmanRuntime/7.43.3",
+  "accept": "*/*",
+  "postman-token": "9b1b7544-2dec-458a-ac40-e32528b69698",
+  "host": "localhost:8000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "92",
+  "cookie": "session=b8fb9dad-3c2f-434f-8f80-2f7ec8107c31.OzPpiHHEmZLn9Fr6pRmH3e4z3R8"
+}
+
+    Body : {
+  "question": "How many disposals did Patrick Dangerfield get in his most recent game?"
+}
+
+    
+2025-04-09T07:34:11.043Z [info] Received query: How many disposals did Patrick Dangerfield get in his most recent game?
+2025-04-09T07:34:12.193Z [error] Failed to generate query from question!
+2025-04-09T07:34:12.196Z [info] ::1 - - [09/Apr/2025:07:34:12 +0000] "POST /api/query HTTP/1.1" 400 70 "-" "PostmanRuntime/7.43.3"
+2025-04-09T07:34:25.516Z [info] StatBall API Server is running on port 8000
+2025-04-09T07:34:33.221Z [info] Incoming Request - POST /api/query
+Headers : {
+  "content-type": "application/json",
+  "user-agent": "PostmanRuntime/7.43.3",
+  "accept": "*/*",
+  "postman-token": "a2d498b0-ae00-47ad-9db3-a551aef87bc5",
+  "host": "localhost:8000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "92",
+  "cookie": "session=b8fb9dad-3c2f-434f-8f80-2f7ec8107c31.OzPpiHHEmZLn9Fr6pRmH3e4z3R8"
+}
+
+    Body : {
+  "question": "How many disposals did Patrick Dangerfield get in his most recent game?"
+}
+
+    
+2025-04-09T07:34:33.222Z [info] Received query: How many disposals did Patrick Dangerfield get in his most recent game?
+2025-04-09T07:34:34.637Z [error] Failed to generate query from question!
+2025-04-09T07:34:34.663Z [info] ::1 - - [09/Apr/2025:07:34:34 +0000] "POST /api/query HTTP/1.1" 400 70 "-" "PostmanRuntime/7.43.3"
+2025-04-09T07:35:00.307Z [info] StatBall API Server is running on port 8000
+2025-04-09T07:35:04.769Z [info] Incoming Request - POST /api/query
+Headers : {
+  "content-type": "application/json",
+  "user-agent": "PostmanRuntime/7.43.3",
+  "accept": "*/*",
+  "postman-token": "cc282db8-f2d4-4416-8b0c-39967886fa97",
+  "host": "localhost:8000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "92",
+  "cookie": "session=b8fb9dad-3c2f-434f-8f80-2f7ec8107c31.OzPpiHHEmZLn9Fr6pRmH3e4z3R8"
+}
+
+    Body : {
+  "question": "How many disposals did Patrick Dangerfield get in his most recent game?"
+}
+
+    
+2025-04-09T07:35:04.770Z [info] Received query: How many disposals did Patrick Dangerfield get in his most recent game?
+2025-04-09T07:35:05.857Z [info] ::1 - - [09/Apr/2025:07:35:05 +0000] "POST /api/query HTTP/1.1" 500 537 "-" "PostmanRuntime/7.43.3"
+2025-04-09T07:35:16.871Z [info] StatBall API Server is running on port 8000
+2025-04-09T07:35:20.098Z [info] Incoming Request - POST /api/query
+Headers : {
+  "content-type": "application/json",
+  "user-agent": "PostmanRuntime/7.43.3",
+  "accept": "*/*",
+  "postman-token": "c0acf992-c73a-456e-a803-dc7d1386f1ee",
+  "host": "localhost:8000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "92",
+  "cookie": "session=b8fb9dad-3c2f-434f-8f80-2f7ec8107c31.OzPpiHHEmZLn9Fr6pRmH3e4z3R8"
+}
+
+    Body : {
+  "question": "How many disposals did Patrick Dangerfield get in his most recent game?"
+}
+
+    
+2025-04-09T07:35:20.098Z [info] Received query: How many disposals did Patrick Dangerfield get in his most recent game?
+2025-04-09T07:35:21.230Z [info] LLM response: [object Object]
+2025-04-09T07:35:21.230Z [info] Executing query: SELECT disposals
+FROM player_stats
+WHERE player_id = 'Patrick Dangerfield'
+ORDER BY match_id DESC
+LIMIT 1;
+2025-04-09T07:35:21.234Z [info] ::1 - - [09/Apr/2025:07:35:21 +0000] "POST /api/query HTTP/1.1" 500 382 "-" "PostmanRuntime/7.43.3"
+2025-04-09T07:37:30.866Z [info] StatBall API Server is running on port 8000
+2025-04-09T07:37:41.755Z [info] Incoming Request - POST /api/query
+Headers : {
+  "content-type": "application/json",
+  "user-agent": "PostmanRuntime/7.43.3",
+  "accept": "*/*",
+  "postman-token": "8d4d88fd-25de-4235-9869-270ad2c1be7f",
+  "host": "localhost:8000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "92",
+  "cookie": "session=b8fb9dad-3c2f-434f-8f80-2f7ec8107c31.OzPpiHHEmZLn9Fr6pRmH3e4z3R8"
+}
+
+    Body : {
+  "question": "How many disposals did Patrick Dangerfield get in his most recent game?"
+}
+
+    
+2025-04-09T07:37:41.755Z [info] Received query: How many disposals did Patrick Dangerfield get in his most recent game?
+2025-04-09T07:37:42.793Z [info] LLM response: [object Object]
+2025-04-09T07:37:42.794Z [info] Executing query: SELECT disposals
+FROM player_stats
+WHERE player_id = 'Patrick Dangerfield'
+ORDER BY match_id DESC
+LIMIT 1;
+2025-04-09T07:37:42.796Z [info] ::1 - - [09/Apr/2025:07:37:42 +0000] "POST /api/query HTTP/1.1" 500 389 "-" "PostmanRuntime/7.43.3"
+2025-04-09T07:37:54.876Z [info] StatBall API Server is running on port 8000
+2025-04-09T07:37:57.201Z [info] Incoming Request - POST /api/query
+Headers : {
+  "content-type": "application/json",
+  "user-agent": "PostmanRuntime/7.43.3",
+  "accept": "*/*",
+  "postman-token": "3c12efb9-1ab6-4b2c-9e96-2db89dd64838",
+  "host": "localhost:8000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "92",
+  "cookie": "session=b8fb9dad-3c2f-434f-8f80-2f7ec8107c31.OzPpiHHEmZLn9Fr6pRmH3e4z3R8"
+}
+
+    Body : {
+  "question": "How many disposals did Patrick Dangerfield get in his most recent game?"
+}
+
+    
+2025-04-09T07:37:57.202Z [info] Received query: How many disposals did Patrick Dangerfield get in his most recent game?
+2025-04-09T07:37:58.133Z [info] LLM response: [object Object]
+2025-04-09T07:37:58.133Z [info] Executing query: SELECT disposals
+FROM player_stats
+WHERE player_id = 'Patrick Dangerfield'
+ORDER BY match_id DESC
+LIMIT 1;
+2025-04-09T07:37:59.097Z [info] ::1 - - [09/Apr/2025:07:37:59 +0000] "POST /api/query HTTP/1.1" 500 666 "-" "PostmanRuntime/7.43.3"
+2025-04-09T07:38:44.175Z [info] StatBall API Server is running on port 8000
+2025-04-09T07:38:49.724Z [info] Incoming Request - POST /api/query
+Headers : {
+  "content-type": "application/json",
+  "user-agent": "PostmanRuntime/7.43.3",
+  "accept": "*/*",
+  "postman-token": "5fcc20ad-a17d-4f27-8e01-0c3d8afc1cd8",
+  "host": "localhost:8000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "92",
+  "cookie": "session=b8fb9dad-3c2f-434f-8f80-2f7ec8107c31.OzPpiHHEmZLn9Fr6pRmH3e4z3R8"
+}
+
+    Body : {
+  "question": "How many disposals did Patrick Dangerfield get in his most recent game?"
+}
+
+    
+2025-04-09T07:38:49.725Z [info] Received query: How many disposals did Patrick Dangerfield get in his most recent game?
+2025-04-09T07:38:50.762Z [info] LLM response: [object Object]
+2025-04-09T07:38:50.762Z [info] Executing query: SELECT disposals
+FROM player_stats
+WHERE player_id = 'Patrick Dangerfield'
+ORDER BY match_id DESC
+LIMIT 1;
+2025-04-09T07:38:51.916Z [info] ::1 - - [09/Apr/2025:07:38:51 +0000] "POST /api/query HTTP/1.1" 500 666 "-" "PostmanRuntime/7.43.3"
+2025-04-09T07:46:11.179Z [info] StatBall API Server is running on port 8000
+2025-04-09T07:46:14.365Z [info] Incoming Request - POST /api/query
+Headers : {
+  "content-type": "application/json",
+  "user-agent": "PostmanRuntime/7.43.3",
+  "accept": "*/*",
+  "postman-token": "436c9777-08bf-498c-b31a-3690ee64bc27",
+  "host": "localhost:8000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "92",
+  "cookie": "session=b8fb9dad-3c2f-434f-8f80-2f7ec8107c31.OzPpiHHEmZLn9Fr6pRmH3e4z3R8"
+}
+
+    Body : {
+  "question": "How many disposals did Patrick Dangerfield get in his most recent game?"
+}
+
+    
+2025-04-09T07:46:14.366Z [info] Received query: How many disposals did Patrick Dangerfield get in his most recent game?
+2025-04-09T07:46:15.657Z [info] LLM response: [object Object]
+2025-04-09T07:46:15.658Z [info] Executing query: SELECT disposals
+FROM match_player_stats
+WHERE player_id = (SELECT player_id FROM players WHERE first_name = 'Patrick' AND last_name = 'Dangerfield')
+ORDER BY match_id DESC
+LIMIT 1;
+2025-04-09T07:46:16.494Z [info] Query result: [{"disposals":26}]
+2025-04-09T07:46:16.499Z [info] ::1 - - [09/Apr/2025:07:46:16 +0000] "POST /api/query HTTP/1.1" 200 29 "-" "PostmanRuntime/7.43.3"
+2025-04-09T07:48:47.873Z [info] Incoming Request - POST /api/query
+Headers : {
+  "content-type": "application/json",
+  "user-agent": "PostmanRuntime/7.43.3",
+  "accept": "*/*",
+  "postman-token": "8d2b9923-78b7-485f-b7be-032d2eab6384",
+  "host": "localhost:8000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "84",
+  "cookie": "session=b8fb9dad-3c2f-434f-8f80-2f7ec8107c31.OzPpiHHEmZLn9Fr6pRmH3e4z3R8"
+}
+
+    Body : {
+  "question": "How many disposals did Joe Hosking get in his most recent game?"
+}
+
+    
+2025-04-09T07:48:47.877Z [info] Received query: How many disposals did Joe Hosking get in his most recent game?
+2025-04-09T07:48:50.499Z [info] LLM response: [object Object]
+2025-04-09T07:48:50.500Z [info] Executing query: SELECT disposals
+FROM match_player_stats
+WHERE player_id = (SELECT player_id FROM players WHERE name = 'Joe Hosking')
+ORDER BY match_id DESC
+LIMIT 1;
+2025-04-09T07:48:50.876Z [info] Query result: []
+2025-04-09T07:48:50.879Z [info] ::1 - - [09/Apr/2025:07:48:50 +0000] "POST /api/query HTTP/1.1" 200 13 "-" "PostmanRuntime/7.43.3"
