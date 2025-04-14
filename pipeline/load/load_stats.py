@@ -12,7 +12,7 @@ def load_stats(stats_df: pd.DataFrame, delete: bool = False) -> bool:
     if delete:
         with engine.connect() as connection:
             connection.execute(text("DELETE FROM match_player_stats CASCADE"))
-            connection.commit()
+            
 
     problematic_rows = []
 

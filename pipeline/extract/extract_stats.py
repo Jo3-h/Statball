@@ -16,6 +16,11 @@ def extract_stats(matches_data: pd.DataFrame) -> list:
         url = url.replace('..', 'https://afltables.com/afl/')
         response = requests.get(url)
 
+        print(f"Extracting stats for match from {url}", end='\t')
+        if response.status_code != 200:
+            print(f"Error: {response.status_code}")
+            continue
+
         soup = bs(response.text, 'html.parser')
 
         tables = soup.find_all('table')
@@ -64,7 +69,9 @@ def extract_stats(matches_data: pd.DataFrame) -> list:
                     pass
 
                 stats_data.append(player_stats)
+                print("Success Home", end='\t')
         except Exception as e:
+            print("Failed Home", end='\t')
             if TESTING:
                 print(f"Error: {e} -> url: {url}")
 
@@ -111,10 +118,13 @@ def extract_stats(matches_data: pd.DataFrame) -> list:
                 except:
                     pass
 
+                print("Success Away", end='\t')
                 stats_data.append(player_stats)
         except Exception as e:
+            print("Failed Away", end='\t')
             if TESTING:
                 print(f"Error: {e} -> url: {url}")
 
+    print('\n')
 
     return stats_data

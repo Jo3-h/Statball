@@ -12,7 +12,7 @@ def load_players(players_df: pd.DataFrame, delete: bool = False) -> bool:
     if delete:
         with engine.connect() as connection:
             connection.execute(text("DELETE FROM players CASCADE"))
-            connection.commit()
+            
 
     problematic_rows = []
 

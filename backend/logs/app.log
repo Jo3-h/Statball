@@ -535,3 +535,731 @@ ORDER BY match_id DESC
 LIMIT 1;
 2025-04-09T07:48:50.876Z [info] Query result: []
 2025-04-09T07:48:50.879Z [info] ::1 - - [09/Apr/2025:07:48:50 +0000] "POST /api/query HTTP/1.1" 200 13 "-" "PostmanRuntime/7.43.3"
+2025-04-10T06:56:14.746Z [info] StatBall API Server is running on port 8000
+2025-04-10T23:11:24.512Z [info] StatBall API Server is running on port 8000
+2025-04-10T23:19:47.873Z [info] Incoming Request - POST /api/query
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
+  "accept": "*/*",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "referer": "http://localhost:5173/",
+  "content-type": "application/json",
+  "content-length": "66",
+  "origin": "http://localhost:5173",
+  "connection": "keep-alive",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-site",
+  "priority": "u=0"
+}
+
+    Body : {
+  "question": "get me the stats for rory sloane's most recent game"
+}
+
+    
+2025-04-10T23:19:47.874Z [info] Received query: get me the stats for rory sloane's most recent game
+2025-04-10T23:19:50.581Z [info] LLM response: [object Object]
+2025-04-10T23:19:50.581Z [info] Executing query: SELECT *
+FROM match_player_stats
+WHERE player_id = (SELECT player_id FROM players WHERE first_name = 'Rory' AND last_name = 'Sloane')
+ORDER BY match_id DESC
+LIMIT 1;
+2025-04-10T23:21:06.642Z [info] ::ffff:127.0.0.1 - - [10/Apr/2025:23:21:06 +0000] "POST /api/query HTTP/1.1" 500 1224 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-10T23:33:57.375Z [info] StatBall API Server is running on port 8000
+2025-04-10T23:36:30.587Z [info] StatBall API Server is running on port 8000
+2025-04-10T23:36:38.872Z [info] StatBall API Server is running on port 8000
+2025-04-10T23:36:59.071Z [info] StatBall API Server is running on port 8000
+2025-04-10T23:37:04.102Z [info] Incoming Request - POST /api/query
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
+  "accept": "*/*",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "referer": "http://localhost:5173/",
+  "content-type": "application/json",
+  "content-length": "66",
+  "origin": "http://localhost:5173",
+  "connection": "keep-alive",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-site",
+  "priority": "u=0"
+}
+
+    Body : {
+  "question": "get me the stats for rory sloane's most recent game"
+}
+
+    
+2025-04-10T23:37:04.104Z [info] Received query: get me the stats for rory sloane's most recent game
+2025-04-10T23:37:05.730Z [info] LLM response: [object Object]
+2025-04-10T23:37:05.730Z [info] Executing query: SELECT *
+FROM match_player_stats
+WHERE player_id = (SELECT player_id FROM players WHERE name = 'Rory Sloane')
+ORDER BY match_id DESC
+LIMIT 1;
+2025-04-10T23:37:06.730Z [info] Query result: []
+2025-04-10T23:37:06.734Z [info] ::ffff:127.0.0.1 - - [10/Apr/2025:23:37:06 +0000] "POST /api/query HTTP/1.1" 200 13 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-10T23:39:18.390Z [info] StatBall API Server is running on port 8000
+2025-04-10T23:39:22.894Z [info] Incoming Request - POST /api/query
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
+  "accept": "*/*",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "referer": "http://localhost:5173/",
+  "content-type": "application/json",
+  "content-length": "66",
+  "origin": "http://localhost:5173",
+  "connection": "keep-alive",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-site",
+  "priority": "u=0"
+}
+
+    Body : {
+  "question": "get me the stats for rory sloane's most recent game"
+}
+
+    
+2025-04-10T23:39:22.895Z [info] Received query: get me the stats for rory sloane's most recent game
+2025-04-10T23:39:27.556Z [info] LLM response: [object Object]
+2025-04-10T23:39:27.557Z [info] Executing query: SELECT * FROM match_player_stats 
+JOIN players ON match_player_stats.player_id = players.player_id 
+WHERE players.name = 'Sloane, Rory' 
+ORDER BY match_player_stats.stat_id DESC 
+LIMIT 1;
+2025-04-10T23:39:28.421Z [info] Query result: []
+2025-04-10T23:39:28.425Z [info] ::ffff:127.0.0.1 - - [10/Apr/2025:23:39:28 +0000] "POST /api/query HTTP/1.1" 200 13 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-11T01:08:13.982Z [info] Incoming Request - POST /api/query
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
+  "accept": "*/*",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "referer": "http://localhost:5173/",
+  "content-type": "application/json",
+  "content-length": "66",
+  "origin": "http://localhost:5173",
+  "connection": "keep-alive",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-site",
+  "priority": "u=0"
+}
+
+    Body : {
+  "question": "get me the stats for rory sloane's most recent game"
+}
+
+    
+2025-04-11T01:08:13.989Z [info] Received query: get me the stats for rory sloane's most recent game
+2025-04-11T01:08:16.225Z [info] LLM response: [object Object]
+2025-04-11T01:08:16.226Z [info] Executing query: SELECT *
+FROM match_player_stats
+WHERE player_id = (SELECT player_id FROM players WHERE name = 'Sloane, Rory')
+ORDER BY match_id DESC
+LIMIT 1;
+2025-04-11T01:08:16.623Z [info] Query result: []
+2025-04-11T01:08:16.626Z [info] ::ffff:127.0.0.1 - - [11/Apr/2025:01:08:16 +0000] "POST /api/query HTTP/1.1" 200 13 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-11T02:41:25.774Z [info] Incoming Request - POST /api/query
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
+  "accept": "*/*",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "referer": "http://localhost:5173/",
+  "content-type": "application/json",
+  "content-length": "61",
+  "origin": "http://localhost:5173",
+  "connection": "keep-alive",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-site",
+  "priority": "u=0"
+}
+
+    Body : {
+  "question": "how many marks has pendlebury taken this year?"
+}
+
+    
+2025-04-11T02:41:25.777Z [info] Received query: how many marks has pendlebury taken this year?
+2025-04-11T02:41:27.950Z [info] LLM response: [object Object]
+2025-04-11T02:41:27.951Z [info] Executing query: SELECT SUM(marks)
+FROM match_player_stats mps
+JOIN players p ON mps.player_id = p.player_id
+JOIN matches m ON mps.match_id = m.match_id
+WHERE p.last_name = 'Pendlebury'
+AND EXTRACT(year FROM m.date) = EXTRACT(year FROM CURRENT_DATE);
+2025-04-11T02:41:28.838Z [info] Query result: [{"sum":null}]
+2025-04-11T02:41:28.840Z [info] ::ffff:127.0.0.1 - - [11/Apr/2025:02:41:28 +0000] "POST /api/query HTTP/1.1" 200 25 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-11T03:06:38.725Z [info] StatBall API Server is running on port 8000
+2025-04-11T03:11:46.567Z [info] StatBall API Server is running on port 8000
+2025-04-11T03:20:24.303Z [info] StatBall API Server is running on port 8000
+2025-04-11T03:26:23.944Z [info] Incoming Request - POST /api/query
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
+  "accept": "*/*",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "referer": "http://localhost:5173/",
+  "content-type": "application/json",
+  "content-length": "66",
+  "origin": "http://localhost:5173",
+  "connection": "keep-alive",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-site",
+  "priority": "u=0"
+}
+
+    Body : {
+  "question": "get me all the players that have the first name joe"
+}
+
+    
+2025-04-11T03:26:23.947Z [info] Received query: get me all the players that have the first name joe
+2025-04-11T03:26:25.070Z [info] LLM response: [object Object]
+2025-04-11T03:26:25.070Z [info] Executing query: SELECT * FROM public.players WHERE first_name = 'Joe';
+2025-04-11T03:26:25.964Z [info] Query result: []
+2025-04-11T03:26:25.968Z [info] ::ffff:127.0.0.1 - - [11/Apr/2025:03:26:25 +0000] "POST /api/query HTTP/1.1" 200 13 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-12T10:36:03.413Z [info] Incoming Request - GET /api/strava/activities
+Headers : {
+  "user-agent": "PostmanRuntime/7.43.3",
+  "accept": "*/*",
+  "postman-token": "fde65adb-913c-4b49-a513-017bb699ece7",
+  "host": "localhost:8000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "cookie": "session=b8fb9dad-3c2f-434f-8f80-2f7ec8107c31.OzPpiHHEmZLn9Fr6pRmH3e4z3R8"
+}
+
+    Body : no request body
+
+    
+2025-04-12T10:36:03.446Z [info] ::1 - - [12/Apr/2025:10:36:03 +0000] "GET /api/strava/activities HTTP/1.1" 404 160 "-" "PostmanRuntime/7.43.3"
+2025-04-12T10:36:52.485Z [info] Incoming Request - GET /api/strava/activities
+Headers : {
+  "user-agent": "PostmanRuntime/7.43.3",
+  "accept": "*/*",
+  "postman-token": "01560acd-f15f-465a-a2f2-f6d1bcd81f0e",
+  "host": "localhost:8000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "cookie": "session=b8fb9dad-3c2f-434f-8f80-2f7ec8107c31.OzPpiHHEmZLn9Fr6pRmH3e4z3R8"
+}
+
+    Body : no request body
+
+    
+2025-04-12T10:36:52.487Z [info] ::1 - - [12/Apr/2025:10:36:52 +0000] "GET /api/strava/activities HTTP/1.1" 404 160 "-" "PostmanRuntime/7.43.3"
+2025-04-12T10:37:35.229Z [info] Incoming Request - GET /api/leetcode/activity
+Headers : {
+  "user-agent": "PostmanRuntime/7.43.3",
+  "accept": "*/*",
+  "postman-token": "fdee4d65-f98e-4c46-a9ff-edcb957b8223",
+  "host": "localhost:8000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "cookie": "session=b8fb9dad-3c2f-434f-8f80-2f7ec8107c31.OzPpiHHEmZLn9Fr6pRmH3e4z3R8"
+}
+
+    Body : no request body
+
+    
+2025-04-12T10:37:35.232Z [info] ::1 - - [12/Apr/2025:10:37:35 +0000] "GET /api/leetcode/activity HTTP/1.1" 404 160 "-" "PostmanRuntime/7.43.3"
+2025-04-12T10:37:44.867Z [info] Incoming Request - GET /api/github/activity
+Headers : {
+  "user-agent": "PostmanRuntime/7.43.3",
+  "accept": "*/*",
+  "postman-token": "ca674166-8a89-4c7a-8527-40f1d9f940f4",
+  "host": "localhost:8000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "cookie": "session=b8fb9dad-3c2f-434f-8f80-2f7ec8107c31.OzPpiHHEmZLn9Fr6pRmH3e4z3R8"
+}
+
+    Body : no request body
+
+    
+2025-04-12T10:37:44.869Z [info] ::1 - - [12/Apr/2025:10:37:44 +0000] "GET /api/github/activity HTTP/1.1" 404 158 "-" "PostmanRuntime/7.43.3"
+2025-04-12T10:38:08.879Z [info] Incoming Request - GET /api/leetcode/activity
+Headers : {
+  "user-agent": "PostmanRuntime/7.43.3",
+  "accept": "*/*",
+  "postman-token": "2e447a1a-0b98-4266-987f-67a213c63bdf",
+  "host": "localhost:8000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "cookie": "session=b8fb9dad-3c2f-434f-8f80-2f7ec8107c31.OzPpiHHEmZLn9Fr6pRmH3e4z3R8"
+}
+
+    Body : no request body
+
+    
+2025-04-12T10:38:08.883Z [info] ::1 - - [12/Apr/2025:10:38:08 +0000] "GET /api/leetcode/activity HTTP/1.1" 404 160 "-" "PostmanRuntime/7.43.3"
+2025-04-12T10:38:47.034Z [info] Incoming Request - GET /api/strava/activities
+Headers : {
+  "user-agent": "PostmanRuntime/7.43.3",
+  "accept": "*/*",
+  "postman-token": "11091e6b-0654-42b7-b034-2e03472faede",
+  "host": "localhost:8000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "cookie": "session=b8fb9dad-3c2f-434f-8f80-2f7ec8107c31.OzPpiHHEmZLn9Fr6pRmH3e4z3R8"
+}
+
+    Body : no request body
+
+    
+2025-04-12T10:38:47.036Z [info] ::1 - - [12/Apr/2025:10:38:47 +0000] "GET /api/strava/activities HTTP/1.1" 404 160 "-" "PostmanRuntime/7.43.3"
+2025-04-12T10:42:20.925Z [info] Incoming Request - GET /
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "sec-fetch-dest": "document",
+  "sec-fetch-mode": "navigate",
+  "sec-fetch-site": "none",
+  "sec-fetch-user": "?1",
+  "priority": "u=0, i"
+}
+
+    Body : no request body
+
+    
+2025-04-12T10:42:20.935Z [info] ::ffff:127.0.0.1 - - [12/Apr/2025:10:42:20 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-12T10:42:51.882Z [info] Incoming Request - GET /api/leetcode/activity
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "sec-fetch-dest": "document",
+  "sec-fetch-mode": "navigate",
+  "sec-fetch-site": "none",
+  "sec-fetch-user": "?1",
+  "priority": "u=0, i"
+}
+
+    Body : no request body
+
+    
+2025-04-12T10:42:51.886Z [info] ::ffff:127.0.0.1 - - [12/Apr/2025:10:42:51 +0000] "GET /api/leetcode/activity HTTP/1.1" 404 160 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-12T10:43:01.066Z [info] Incoming Request - GET /api/leetcode/activity
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "sec-fetch-dest": "document",
+  "sec-fetch-mode": "navigate",
+  "sec-fetch-site": "none",
+  "sec-fetch-user": "?1",
+  "priority": "u=0, i"
+}
+
+    Body : no request body
+
+    
+2025-04-12T10:43:01.071Z [info] ::ffff:127.0.0.1 - - [12/Apr/2025:10:43:01 +0000] "GET /api/leetcode/activity HTTP/1.1" 404 160 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-13T23:38:54.685Z [info] StatBall API Server is running on port 8000
+2025-04-13T23:39:06.688Z [info] StatBall API Server is running on port 8000
+2025-04-14T01:26:23.462Z [info] Incoming Request - POST /api/query
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
+  "accept": "*/*",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "referer": "http://localhost:5173/",
+  "content-type": "application/json",
+  "content-length": "50",
+  "origin": "http://localhost:5173",
+  "connection": "keep-alive",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-site",
+  "priority": "u=0"
+}
+
+    Body : {
+  "question": "show me the adelaide crows game log"
+}
+
+    
+2025-04-14T01:26:23.467Z [info] Received query: show me the adelaide crows game log
+2025-04-14T01:26:26.854Z [info] LLM response: [object Object]
+2025-04-14T01:26:26.854Z [info] Executing query: SELECT m.round, m.year, m.home_score AS home_team_score, m.away_score AS away_team_score, m.date, m.venue, 
+(SELECT name FROM teams WHERE team_id = m.home_team_id) AS home_team,
+(SELECT name FROM teams WHERE team_id = m.away_team_id) AS away_team
+FROM matches AS m
+WHERE m.home_team_id = (SELECT team_id FROM teams WHERE name = 'Adelaide Crows')
+OR m.away_team_id = (SELECT team_id FROM teams WHERE name = 'Adelaide Crows');
+2025-04-14T01:26:34.775Z [info] Incoming Request - POST /api/query
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
+  "accept": "*/*",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "referer": "http://localhost:5173/",
+  "content-type": "application/json",
+  "content-length": "50",
+  "origin": "http://localhost:5173",
+  "connection": "keep-alive",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-site",
+  "priority": "u=0"
+}
+
+    Body : {
+  "question": "show me the adelaide crows game log"
+}
+
+    
+2025-04-14T01:26:34.777Z [info] Received query: show me the adelaide crows game log
+2025-04-14T01:26:36.573Z [info] LLM response: [object Object]
+2025-04-14T01:26:36.573Z [info] Executing query: SELECT 
+  teams.name AS team_name,
+  matches.round,
+  matches.year,
+  matches.home_score,
+  matches.away_score,
+  matches.home_team_id AS home_team_id,
+  matches.away_team_id AS away_team_id
+FROM matches
+JOIN teams ON matches.home_team_id = teams.team_id
+WHERE teams.name = 'Adelaide Crows' OR teams.name = 'Adelaide Crows' 
+ORDER BY matches.year, matches.round;
+2025-04-14T01:27:41.988Z [info] ::ffff:127.0.0.1 - - [14/Apr/2025:01:27:41 +0000] "POST /api/query HTTP/1.1" 500 1224 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-14T01:27:41.991Z [info] ::ffff:127.0.0.1 - - [14/Apr/2025:01:27:41 +0000] "POST /api/query HTTP/1.1" 500 1224 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-14T01:56:18.703Z [info] Incoming Request - POST /api/query
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
+  "accept": "*/*",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "referer": "http://localhost:5173/",
+  "content-type": "application/json",
+  "content-length": "42",
+  "origin": "http://localhost:5173",
+  "connection": "keep-alive",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-site",
+  "priority": "u=4"
+}
+
+    Body : {
+  "question": "most goals kicked this year"
+}
+
+    
+2025-04-14T01:56:18.706Z [info] Received query: most goals kicked this year
+2025-04-14T01:56:21.210Z [info] LLM response: [object Object]
+2025-04-14T01:56:21.210Z [info] Executing query: SELECT name AS player, goals AS goals
+FROM players
+JOIN match_player_stats ON players.player_id = match_player_stats.player_id
+JOIN matches ON matches.match_id = match_player_stats.match_id
+WHERE goals = (SELECT MAX(goals) FROM match_player_stats WHERE matches.year = YEAR(CURRENT_DATE));
+2025-04-14T01:56:22.884Z [info] ::ffff:127.0.0.1 - - [14/Apr/2025:01:56:22 +0000] "POST /api/query HTTP/1.1" 500 666 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-14T01:56:23.960Z [info] Incoming Request - POST /api/query
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
+  "accept": "*/*",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "referer": "http://localhost:5173/",
+  "content-type": "application/json",
+  "content-length": "42",
+  "origin": "http://localhost:5173",
+  "connection": "keep-alive",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-site",
+  "priority": "u=4"
+}
+
+    Body : {
+  "question": "most goals kicked this year"
+}
+
+    
+2025-04-14T01:56:23.961Z [info] Received query: most goals kicked this year
+2025-04-14T01:56:24.760Z [info] Incoming Request - POST /api/query
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
+  "accept": "*/*",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "referer": "http://localhost:5173/",
+  "content-type": "application/json",
+  "content-length": "42",
+  "origin": "http://localhost:5173",
+  "connection": "keep-alive",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-site",
+  "priority": "u=4"
+}
+
+    Body : {
+  "question": "most goals kicked this year"
+}
+
+    
+2025-04-14T01:56:24.760Z [info] Received query: most goals kicked this year
+2025-04-14T01:56:25.659Z [info] LLM response: [object Object]
+2025-04-14T01:56:25.660Z [info] Executing query: SELECT name AS player_name, goals AS total_goals
+FROM public.players
+INNER JOIN public.match_player_stats ON players.player_id = match_player_stats.player_id
+INNER JOIN public.matches ON match_player_stats.match_id = matches.match_id
+WHERE goals = (SELECT MAX(goals) FROM public.match_player_stats WHERE EXTRACT(year FROM date) = EXTRACT(year FROM CURRENT_DATE));
+2025-04-14T01:56:25.712Z [info] Query result: []
+2025-04-14T01:56:25.729Z [info] ::ffff:127.0.0.1 - - [14/Apr/2025:01:56:25 +0000] "POST /api/query HTTP/1.1" 200 13 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-14T01:56:27.734Z [info] LLM response: [object Object]
+2025-04-14T01:56:27.734Z [info] Executing query: SELECT p.name AS player_name, sum(mps.goals) AS total_goals, sum(mps.kicks) AS total_kicks, sum(mps.marks) AS total_marks, sum(mps.handballs) AS total_handballs, sum(mps.disposals) AS total_disposals, sum(mps.behinds) AS total_behinds 
+FROM players p
+JOIN match_player_stats mps ON p.player_id = mps.player_id
+JOIN matches m ON mps.match_id = m.match_id
+WHERE EXTRACT(year FROM m.date) = EXTRACT(year FROM CURRENT_DATE)
+GROUP BY p.name
+ORDER BY total_goals DESC
+LIMIT 1;
+2025-04-14T01:56:27.940Z [info] Query result: []
+2025-04-14T01:56:27.944Z [info] ::ffff:127.0.0.1 - - [14/Apr/2025:01:56:27 +0000] "POST /api/query HTTP/1.1" 200 13 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-14T01:57:17.479Z [info] Incoming Request - POST /api/query
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
+  "accept": "*/*",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "referer": "http://localhost:5173/",
+  "content-type": "application/json",
+  "content-length": "42",
+  "origin": "http://localhost:5173",
+  "connection": "keep-alive",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-site",
+  "priority": "u=4"
+}
+
+    Body : {
+  "question": "most goals kicked this year"
+}
+
+    
+2025-04-14T01:57:17.480Z [info] Received query: most goals kicked this year
+2025-04-14T01:57:18.029Z [info] Incoming Request - POST /api/query
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
+  "accept": "*/*",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "referer": "http://localhost:5173/",
+  "content-type": "application/json",
+  "content-length": "42",
+  "origin": "http://localhost:5173",
+  "connection": "keep-alive",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-site",
+  "priority": "u=4"
+}
+
+    Body : {
+  "question": "most goals kicked this year"
+}
+
+    
+2025-04-14T01:57:18.030Z [info] Received query: most goals kicked this year
+2025-04-14T01:57:18.850Z [info] Incoming Request - POST /api/query
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
+  "accept": "*/*",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "referer": "http://localhost:5173/",
+  "content-type": "application/json",
+  "content-length": "42",
+  "origin": "http://localhost:5173",
+  "connection": "keep-alive",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-site",
+  "priority": "u=4"
+}
+
+    Body : {
+  "question": "most goals kicked this year"
+}
+
+    
+2025-04-14T01:57:18.854Z [info] Received query: most goals kicked this year
+2025-04-14T01:57:19.016Z [info] LLM response: [object Object]
+2025-04-14T01:57:19.016Z [info] Executing query: SELECT name AS player_name, SUM(goals) AS total_goals
+FROM players
+JOIN match_player_stats ON players.player_id = match_player_stats.player_id
+JOIN matches ON match_player_stats.match_id = matches.match_id
+WHERE EXTRACT(year FROM matches.date) = EXTRACT(year FROM CURRENT_DATE)
+GROUP BY player_name
+ORDER BY total_goals DESC
+LIMIT 1;
+2025-04-14T01:57:19.079Z [info] Incoming Request - POST /api/query
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
+  "accept": "*/*",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "referer": "http://localhost:5173/",
+  "content-type": "application/json",
+  "content-length": "42",
+  "origin": "http://localhost:5173",
+  "connection": "keep-alive",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-site",
+  "priority": "u=4"
+}
+
+    Body : {
+  "question": "most goals kicked this year"
+}
+
+    
+2025-04-14T01:57:19.079Z [info] Received query: most goals kicked this year
+2025-04-14T01:57:19.360Z [info] Query result: []
+2025-04-14T01:57:19.360Z [info] ::ffff:127.0.0.1 - - [14/Apr/2025:01:57:19 +0000] "POST /api/query HTTP/1.1" 200 13 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-14T01:57:19.453Z [info] LLM response: [object Object]
+2025-04-14T01:57:19.454Z [info] Executing query: SELECT p.name AS player_name, SUM(mps.goals) AS total_goals
+FROM players p
+JOIN match_player_stats mps ON p.player_id = mps.player_id
+JOIN matches m ON m.match_id = mps.match_id
+WHERE EXTRACT(year FROM m.date) = EXTRACT(year FROM CURRENT_DATE)
+GROUP BY p.name
+ORDER BY total_goals DESC
+LIMIT 1;
+2025-04-14T01:57:19.488Z [info] Query result: []
+2025-04-14T01:57:19.489Z [info] ::ffff:127.0.0.1 - - [14/Apr/2025:01:57:19 +0000] "POST /api/query HTTP/1.1" 200 13 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-14T01:57:19.880Z [info] Incoming Request - POST /api/query
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
+  "accept": "*/*",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "referer": "http://localhost:5173/",
+  "content-type": "application/json",
+  "content-length": "42",
+  "origin": "http://localhost:5173",
+  "connection": "keep-alive",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-site",
+  "priority": "u=4"
+}
+
+    Body : {
+  "question": "most goals kicked this year"
+}
+
+    
+2025-04-14T01:57:19.880Z [info] Received query: most goals kicked this year
+2025-04-14T01:57:20.260Z [info] Incoming Request - POST /api/query
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
+  "accept": "*/*",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "referer": "http://localhost:5173/",
+  "content-type": "application/json",
+  "content-length": "42",
+  "origin": "http://localhost:5173",
+  "connection": "keep-alive",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-site",
+  "priority": "u=4"
+}
+
+    Body : {
+  "question": "most goals kicked this year"
+}
+
+    
+2025-04-14T01:57:20.261Z [info] Received query: most goals kicked this year
+2025-04-14T01:57:20.482Z [info] LLM response: [object Object]
+2025-04-14T01:57:20.482Z [info] Executing query: SELECT name AS player_name, team_id AS team_id, SUM(goals) AS total_goals
+FROM players
+JOIN match_player_stats ON players.player_id = match_player_stats.player_id
+JOIN matches ON match_player_stats.match_id = matches.match_id
+WHERE EXTRACT(YEAR FROM matches.date) = EXTRACT(YEAR FROM CURRENT_DATE)
+GROUP BY player_name, team_id
+ORDER BY total_goals DESC
+LIMIT 1;
+2025-04-14T01:57:20.518Z [info] Query result: []
+2025-04-14T01:57:20.519Z [info] ::ffff:127.0.0.1 - - [14/Apr/2025:01:57:20 +0000] "POST /api/query HTTP/1.1" 200 13 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-14T01:57:22.181Z [info] LLM response: [object Object]
+2025-04-14T01:57:22.182Z [info] Executing query: SELECT p.name AS player_name, SUM(mps.goals) AS total_goals, SUM(mps.behinds) AS total_behinds, SUM(mps.disposals) AS total_disposals, SUM(mps.kicks) AS total_kicks, SUM(mps.marks) AS total_marks
+FROM players p
+JOIN match_player_stats mps ON p.player_id = mps.player_id
+JOIN matches m ON mps.match_id = m.match_id
+WHERE EXTRACT(year FROM m.date) = EXTRACT(year FROM CURRENT_DATE)
+GROUP BY p.name
+ORDER BY total_goals DESC
+LIMIT 1;
+2025-04-14T01:57:22.215Z [info] Query result: []
+2025-04-14T01:57:22.216Z [info] ::ffff:127.0.0.1 - - [14/Apr/2025:01:57:22 +0000] "POST /api/query HTTP/1.1" 200 13 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-14T01:57:22.504Z [info] LLM response: [object Object]
+2025-04-14T01:57:22.504Z [info] Executing query: SELECT p.name AS player_name, SUM(mps.goals) AS total_goals, SUM(mps.kicks) AS total_kicks, SUM(mps.marks) AS total_marks, SUM(mps.handballs) AS total_handballs, SUM(mps.disposals) AS total_disposals, SUM(mps.behinds) AS total_behinds, SUM(mps.hitouts) AS total_hitouts, SUM(mps.tackles) AS total_tackles, SUM(mps.rebound_50s) AS total_rebound_50s, SUM(mps.inside_50s) AS total_inside_50s, SUM(mps.clearances) AS total_clearances
+FROM match_player_stats mps
+JOIN players p ON mps.player_id = p.player_id
+JOIN matches m ON mps.match_id = m.match_id
+WHERE EXTRACT(YEAR FROM m.date) = EXTRACT(YEAR FROM CURRENT_DATE)
+GROUP BY p.name
+ORDER BY total_goals DESC
+LIMIT 1;
+2025-04-14T01:57:22.540Z [info] Query result: []
+2025-04-14T01:57:22.541Z [info] ::ffff:127.0.0.1 - - [14/Apr/2025:01:57:22 +0000] "POST /api/query HTTP/1.1" 200 13 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-14T01:57:23.295Z [info] LLM response: [object Object]
+2025-04-14T01:57:23.295Z [info] Executing query: SELECT p.name AS player_name, SUM(mps.goals) AS total_goals, SUM(mps.kicks) AS total_kicks, SUM(mps.marks) AS total_marks, SUM(mps.handballs) AS total_handballs, SUM(mps.disposals) AS total_disposals, SUM(mps.behinds) AS total_behinds, SUM(mps.hitouts) AS total_hitouts, SUM(mps.tackles) AS total_tackles, SUM(mps.rebound_50s) AS total_rebound_50s, SUM(mps.inside_50s) AS total_inside_50s, SUM(mps.clearances) AS total_clearances, SUM(mps.clangers) AS total_clangers, SUM(mps.free_kicks_for) AS total_free_kicks_for, SUM(mps.free_kicks_against) AS total_free_kicks_against, SUM(mps.brownlow_votes) AS total_brownlow_votes, SUM(mps.contested_possessions) AS total_contested_possessions, SUM(mps.uncontested_possessions) AS total_uncontested_possessions, SUM(mps.contested_marks) AS total_contested_marks, SUM(mps.marks_inside_50) AS total_marks_inside_50, SUM(mps.one_percenters) AS total_one_percenters, SUM(mps.bounces) AS total_bounces, SUM(mps.goals_against) AS total_goals_against, SUM(mps.percentage_of_game_played) AS total_percentage_of_game_played
+FROM players p
+JOIN match_player_stats mps ON p.player_id = mps.player_id
+JOIN matches m ON mps.match_id = m.match_id
+WHERE m.year = EXTRACT(year FROM CURRENT_DATE)
+GROUP BY p.name
+ORDER BY total_goals DESC
+LIMIT 1;
+2025-04-14T01:57:23.331Z [info] Query result: []
+2025-04-14T01:57:23.332Z [info] ::ffff:127.0.0.1 - - [14/Apr/2025:01:57:23 +0000] "POST /api/query HTTP/1.1" 200 13 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0"

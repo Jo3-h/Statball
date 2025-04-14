@@ -11,6 +11,10 @@ def extract_matches():
 
         url = f"https://afltables.com/afl/seas/{year}.html"
         response = requests.get(url)
+        print(f"Extracting matches for {year} from {url}")
+        if response.status_code != 200:
+            print(f"Error: {response.status_code}")
+            continue
         soup = bs(response.text, 'html.parser')
         tables = soup.find_all('table')
 

@@ -12,7 +12,7 @@ def load_matches(matches_df: pd.DataFrame, delete: bool = False) -> bool:
     if delete:
         with engine.connect() as connection:
             connection.execute(text("DELETE FROM matches CASCADE"))
-            connection.commit()
+            
 
     problematic_rows = []
 

@@ -19,17 +19,17 @@ def data_pipeline():
 
     # extract data
     teams_data = extract_teams()
-    players_data = extract_players()
+    #players_data = extract_players()
     matches_data = extract_matches()
 
     # export data
     export_dict(teams_data, 'teams')
-    export_dict(players_data, 'players')
+    #export_dict(players_data, 'players')
     export_dict(matches_data, 'matches')
 
     # transform data to dataframe
     teams_df = transform_teams(teams_data)
-    players_df = transform_players(players_data)
+    #players_df = transform_players(players_data)
     matches_df = transform_matches(matches_data)
 
     # extract stats data after match_id have been generated in transform_matches()
@@ -39,13 +39,13 @@ def data_pipeline():
 
     # export dataframe objects
     export_df(teams_df, 'teams')
-    export_df(players_df, 'players')
+    #export_df(players_df, 'players')
     export_df(matches_df, 'matches')
     export_df(stats_df, 'stats')
 
     # load data to database
     load_teams(teams_df, delete=True)
-    load_players(players_df, delete=True)
+    #load_players(players_df, delete=True)
     load_matches(matches_df, delete=True)
     load_stats(stats_df, delete=True)
 

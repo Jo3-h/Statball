@@ -14,7 +14,7 @@ def load_teams(teams_df: pd.DataFrame, delete: bool = False) -> bool:
     if delete:
         with engine.connect() as connection:
             connection.execute(text("DELETE FROM teams CASCADE"))
-            connection.commit()
+            
 
     problematic_rows = []
 

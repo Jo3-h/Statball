@@ -9,7 +9,7 @@ import os
 load_dotenv()
 
 # General configuration 
-TESTING = True
+TESTING = False
 VERBOSE = False
 
 # configuration for log files and variables
@@ -18,7 +18,7 @@ LOG_DIR = "logs/test_files"
 
 # configuration for urls for data extraction
 TEAMS_URL = "https://afltables.com/afl/teams/allteams/overall_wl.html"
-PLAYERS_URL = "https://afltables.com/afl/stats/2025.html#1"
+PLAYERS_URL = "https://afltables.com/afl/stats/"
 
 # configuration for database connection
 DB_USERNAME = os.getenv("DB_USERNAME")
