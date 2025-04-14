@@ -4,6 +4,8 @@ import requests
 
 def extract_matches():
 
+    print('-----> Extracting match data from AFL TABLES website', end='\n\n')
+
     match_data = []
     current_year = datetime.now().year
 
@@ -11,7 +13,7 @@ def extract_matches():
 
         url = f"https://afltables.com/afl/seas/{year}.html"
         response = requests.get(url)
-        print(f"Extracting matches for {year} from {url}")
+        print(f"\tExtracting matches for {year} from {url}")
         if response.status_code != 200:
             print(f"Error: {response.status_code}")
             continue
@@ -41,11 +43,13 @@ def extract_matches():
                     match['stats_link'] = game.find_all('tr')[1].find_all('td')[3].find('a')['href']
                     match['venue'] = game.find_all('tr')[0].find_all('td')[3].find('a').text
                     round_matches.append(match)
+                    print(f"\t\tExtracted data for round {match['round']} - {match['home_team']} v {match['away_team']}")
 
             except:
                 pass
 
             match_data.extend(round_matches)
             
+    print('-----> Finished extracting march data\n')
 
     return match_data

@@ -9,6 +9,8 @@ def replace_non_breaking_space(data):
 
 def transform_stats(stats_data: dict) -> pd.DataFrame:
 
+    print('-----> Transforming stats data', end='\n\n')
+
     stats_data = [replace_non_breaking_space(data) for data in stats_data]
     stats_df = pd.DataFrame(stats_data)
 
@@ -18,5 +20,7 @@ def transform_stats(stats_data: dict) -> pd.DataFrame:
 
     # type cast columns to int
     stats_df = stats_df.fillna(0).astype(int)
+    
+    print('-----> Finished transforming stats data\n')
 
     return stats_df

@@ -4,6 +4,8 @@ import requests
 
 def extract_teams():
 
+    print("-----> Extracting teams from AFL TABLES website",end='\n\n')
+
     # read the html from the url
     response = requests.get(TEAMS_URL)
     html = response.content
@@ -23,6 +25,9 @@ def extract_teams():
             'points_for': int(cols[7].text.strip()),
             'points_against': int(cols[10].text.strip()),
         }
+        print(f"\textracted {team_data['name']} team data")
         teams_data.append(team_data)
+
+    print('-----> Finished extracting teams\n')
 
     return teams_data

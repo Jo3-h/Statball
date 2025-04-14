@@ -1263,3 +1263,235 @@ ORDER BY total_goals DESC
 LIMIT 1;
 2025-04-14T01:57:23.331Z [info] Query result: []
 2025-04-14T01:57:23.332Z [info] ::ffff:127.0.0.1 - - [14/Apr/2025:01:57:23 +0000] "POST /api/query HTTP/1.1" 200 13 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-14T06:44:33.909Z [info] Incoming Request - POST /api/query
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
+  "accept": "*/*",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "referer": "http://localhost:5173/",
+  "content-type": "application/json",
+  "content-length": "45",
+  "origin": "http://localhost:5173",
+  "connection": "keep-alive",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-site",
+  "priority": "u=4"
+}
+
+    Body : {
+  "question": "Jesse Hogan game logs for 2024"
+}
+
+    
+2025-04-14T06:44:33.913Z [info] Received query: Jesse Hogan game logs for 2024
+2025-04-14T06:44:36.236Z [info] LLM response: [object Object]
+2025-04-14T06:44:36.236Z [info] Executing query: SELECT *
+FROM players
+WHERE name = 'Hogan, Jesse'
+AND player_id IN (SELECT player_id
+                  FROM match_player_stats
+                  JOIN matches ON match_player_stats.match_id = matches.match_id
+                  WHERE matches.year = 2024);
+2025-04-14T06:44:36.937Z [info] Query result: [{"team_id":1477665253,"number":23,"name":"Hogan, Jesse","first_name":"Jesse","last_name":"Hogan","born":"1995-02-12","debut":"2015-03-30","last":"2025-03-29","height":195,"weight":100,"debut_age":"20y 51d","last_age":"30y 53d","player_id":699930189}]
+2025-04-14T06:44:36.940Z [info] ::ffff:127.0.0.1 - - [14/Apr/2025:06:44:36 +0000] "POST /api/query HTTP/1.1" 200 262 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-14T06:45:04.084Z [info] Incoming Request - POST /api/query
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
+  "accept": "*/*",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "referer": "http://localhost:5173/",
+  "content-type": "application/json",
+  "content-length": "44",
+  "origin": "http://localhost:5173",
+  "connection": "keep-alive",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-site",
+  "priority": "u=4"
+}
+
+    Body : {
+  "question": "Jesse Hogan game log for 2024"
+}
+
+    
+2025-04-14T06:45:04.088Z [info] Received query: Jesse Hogan game log for 2024
+2025-04-14T06:45:04.919Z [info] LLM response: [object Object]
+2025-04-14T06:45:04.919Z [info] Executing query: SELECT * FROM public.players
+WHERE name = 'Hogan, Jesse'
+2025-04-14T06:45:05.266Z [info] Query result: [{"team_id":869587419,"number":1,"name":"Hogan, Jesse","first_name":"Jesse","last_name":"Hogan","born":"1995-02-12","debut":"2015-03-30","last":"2025-03-29","height":195,"weight":100,"debut_age":"20y 51d","last_age":"30y 53d","player_id":100520908},{"team_id":1477665253,"number":23,"name":"Hogan, Jesse","first_name":"Jesse","last_name":"Hogan","born":"1995-02-12","debut":"2015-03-30","last":"2025-03-29","height":195,"weight":100,"debut_age":"20y 51d","last_age":"30y 53d","player_id":699930189},{"team_id":1866395224,"number":1,"name":"Hogan, Jesse","first_name":"Jesse","last_name":"Hogan","born":"1995-02-12","debut":"2015-03-30","last":"2025-03-29","height":195,"weight":100,"debut_age":"20y 51d","last_age":"30y 53d","player_id":1671273385},{"team_id":1866395224,"number":11,"name":"Hogan, Jesse","first_name":"Jesse","last_name":"Hogan","born":"1995-02-12","debut":"2015-03-30","last":"2025-03-29","height":195,"weight":100,"debut_age":"20y 51d","last_age":"30y 53d","player_id":1557260552}]
+2025-04-14T06:45:05.268Z [info] ::ffff:127.0.0.1 - - [14/Apr/2025:06:45:05 +0000] "POST /api/query HTTP/1.1" 200 1011 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-14T06:45:05.500Z [info] Incoming Request - POST /api/query
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
+  "accept": "*/*",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "referer": "http://localhost:5173/",
+  "content-type": "application/json",
+  "content-length": "44",
+  "origin": "http://localhost:5173",
+  "connection": "keep-alive",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-site",
+  "priority": "u=4"
+}
+
+    Body : {
+  "question": "Jesse Hogan game log for 2024"
+}
+
+    
+2025-04-14T06:45:05.500Z [info] Received query: Jesse Hogan game log for 2024
+2025-04-14T06:45:08.788Z [info] LLM response: [object Object]
+2025-04-14T06:45:08.788Z [info] Executing query: SELECT players.name, match_player_stats.date, match_player_stats.kicks, match_player_stats.marks, match_player_stats.handballs, match_player_stats.disposals, match_player_stats.goals, match_player_stats.behinds, match_player_stats.hitouts, match_player_stats.tackles, match_player_stats.rebound_50s, match_player_stats.inside_50s, match_player_stats.clearances, match_player_stats.clangers, match_player_stats.free_kicks_for, match_player_stats.free_kicks_against, match_player_stats.brownlow_votes, match_player_stats.contested_possessions, match_player_stats.uncontested_possessions, match_player_stats.contested_marks, match_player_stats.marks_inside_50, match_player_stats.one_percenters, match_player_stats.bounces, match_player_stats.goals_against, match_player_stats.percentage_of_game_played 
+FROM match_player_stats 
+INNER JOIN players ON match_player_stats.player_id = players.player_id 
+INNER JOIN matches ON match_player_stats.match_id = matches.match_id 
+WHERE players.name = 'Hogan, Jesse' AND extract(year FROM match_player_stats.date) = 2024;
+2025-04-14T06:45:08.830Z [info] ::ffff:127.0.0.1 - - [14/Apr/2025:06:45:08 +0000] "POST /api/query HTTP/1.1" 500 666 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-14T06:53:38.877Z [info] Incoming Request - POST /api/query
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
+  "accept": "*/*",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "referer": "http://localhost:5173/",
+  "content-type": "application/json",
+  "content-length": "44",
+  "origin": "http://localhost:5173",
+  "connection": "keep-alive",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-site",
+  "priority": "u=4"
+}
+
+    Body : {
+  "question": "Jesse Hogan game log for 2024"
+}
+
+    
+2025-04-14T06:53:38.880Z [info] Received query: Jesse Hogan game log for 2024
+2025-04-14T06:53:40.194Z [info] LLM response: [object Object]
+2025-04-14T06:53:40.194Z [info] Executing query: SELECT *
+FROM players
+WHERE name = 'Hogan, Jesse';
+2025-04-14T06:53:40.583Z [info] Query result: [{"team_id":869587419,"number":1,"name":"Hogan, Jesse","first_name":"Jesse","last_name":"Hogan","born":"1995-02-12","debut":"2015-03-30","last":"2025-03-29","height":195,"weight":100,"debut_age":"20y 51d","last_age":"30y 53d","player_id":100520908},{"team_id":1477665253,"number":23,"name":"Hogan, Jesse","first_name":"Jesse","last_name":"Hogan","born":"1995-02-12","debut":"2015-03-30","last":"2025-03-29","height":195,"weight":100,"debut_age":"20y 51d","last_age":"30y 53d","player_id":699930189},{"team_id":1866395224,"number":1,"name":"Hogan, Jesse","first_name":"Jesse","last_name":"Hogan","born":"1995-02-12","debut":"2015-03-30","last":"2025-03-29","height":195,"weight":100,"debut_age":"20y 51d","last_age":"30y 53d","player_id":1671273385},{"team_id":1866395224,"number":11,"name":"Hogan, Jesse","first_name":"Jesse","last_name":"Hogan","born":"1995-02-12","debut":"2015-03-30","last":"2025-03-29","height":195,"weight":100,"debut_age":"20y 51d","last_age":"30y 53d","player_id":1557260552}]
+2025-04-14T06:53:40.584Z [info] ::ffff:127.0.0.1 - - [14/Apr/2025:06:53:40 +0000] "POST /api/query HTTP/1.1" 200 1011 "http://localhost:5173/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-14T07:02:42.845Z [info] Incoming Request - POST /api/query
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1",
+  "accept": "*/*",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "referer": "http://localhost:5173/",
+  "content-type": "application/json",
+  "content-length": "60",
+  "origin": "http://localhost:5173",
+  "connection": "keep-alive",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-site",
+  "priority": "u=4"
+}
+
+    Body : {
+  "question": "how many goals did taylor walker kick in 2022"
+}
+
+    
+2025-04-14T07:02:42.849Z [info] Received query: how many goals did taylor walker kick in 2022
+2025-04-14T07:02:48.282Z [info] LLM response: [object Object]
+2025-04-14T07:02:48.282Z [info] Executing query: SELECT SUM(goals) AS total_goals, 
+       SUM(kicks) AS total_kicks, 
+       SUM(marks) AS total_marks, 
+       SUM(handballs) AS total_handballs, 
+       SUM(disposals) AS total_disposals, 
+       SUM(behinds) AS total_behinds, 
+       SUM(hitouts) AS total_hitouts, 
+       SUM(tackles) AS total_tackles, 
+       SUM(rebound_50s) AS total_rebound_50s, 
+       SUM(inside_50s) AS total_inside_50s, 
+       SUM(clearances) AS total_clearances, 
+       SUM(clangers) AS total_clangers, 
+       SUM(free_kicks_for) AS total_free_kicks_for, 
+       SUM(free_kicks_against) AS total_free_kicks_against, 
+       SUM(brownlow_votes) AS total_brownlow_votes, 
+       SUM(contested_possessions) AS total_contested_possessions, 
+       SUM(uncontested_possessions) AS total_uncontested_possessions, 
+       SUM(contested_marks) AS total_contested_marks, 
+       SUM(marks_inside_50) AS total_marks_inside_50, 
+       SUM(one_percenters) AS total_one_percenters, 
+       SUM(bounces) AS total_bounces, 
+       SUM(goals_against) AS total_goals_against, 
+       SUM(percentage_of_game_played) AS total_percentage_of_game_played
+FROM players
+JOIN match_player_stats ON players.player_id = match_player_stats.player_id
+JOIN matches ON match_player_stats.match_id = matches.match_id
+WHERE players.first_name = 'Taylor' AND players.last_name = 'Walker'
+AND EXTRACT(YEAR FROM matches.date) = 2022;
+2025-04-14T07:02:48.614Z [info] Incoming Request - POST /api/query
+Headers : {
+  "host": "localhost:8000",
+  "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1",
+  "accept": "*/*",
+  "accept-language": "en-US,en;q=0.5",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "referer": "http://localhost:5173/",
+  "content-type": "application/json",
+  "content-length": "60",
+  "origin": "http://localhost:5173",
+  "connection": "keep-alive",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-site",
+  "priority": "u=4"
+}
+
+    Body : {
+  "question": "how many goals did taylor walker kick in 2022"
+}
+
+    
+2025-04-14T07:02:48.614Z [info] Received query: how many goals did taylor walker kick in 2022
+2025-04-14T07:02:48.715Z [info] Query result: [{"total_goals":"22","total_kicks":"96","total_marks":"50","total_handballs":"48","total_disposals":"144","total_behinds":"15","total_hitouts":"17","total_tackles":"18","total_rebound_50s":"0","total_inside_50s":"33","total_clearances":"6","total_clangers":"31","total_free_kicks_for":"17","total_free_kicks_against":"16","total_brownlow_votes":"10","total_contested_possessions":"78","total_uncontested_possessions":"76","total_contested_marks":"12","total_marks_inside_50":"22","total_one_percenters":"13","total_bounces":"0","total_goals_against":"8","total_percentage_of_game_played":"789"}]
+2025-04-14T07:02:48.717Z [info] ::ffff:127.0.0.1 - - [14/Apr/2025:07:02:48 +0000] "POST /api/query HTTP/1.1" 200 606 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+2025-04-14T07:02:52.654Z [info] LLM response: [object Object]
+2025-04-14T07:02:52.655Z [info] Executing query: SELECT SUM(goals) AS total_goals, 
+       SUM(kicks) AS total_kicks, 
+       SUM(marks) AS total_marks, 
+       SUM(handballs) AS total_handballs, 
+       SUM(disposals) AS total_disposals, 
+       SUM(behinds) AS total_behinds, 
+       SUM(hitouts) AS total_hitouts, 
+       SUM(tackles) AS total_tackles, 
+       SUM(rebound_50s) AS total_rebound_50s, 
+       SUM(inside_50s) AS total_inside_50s, 
+       SUM(clearances) AS total_clearances, 
+       SUM(clangers) AS total_clangers, 
+       SUM(free_kicks_for) AS total_free_kicks_for, 
+       SUM(free_kicks_against) AS total_free_kicks_against, 
+       SUM(brownlow_votes) AS total_brownlow_votes, 
+       SUM(contested_possessions) AS total_contested_possessions, 
+       SUM(uncontested_possessions) AS total_uncontested_possessions, 
+       SUM(contested_marks) AS total_contested_marks, 
+       SUM(marks_inside_50) AS total_marks_inside_50, 
+       SUM(one_percenters) AS total_one_percenters, 
+       SUM(bounces) AS total_bounces, 
+       SUM(goals_against) AS total_goals_against, 
+       SUM(percentage_of_game_played) AS total_percentage_of_game_played
+FROM match_player_stats 
+INNER JOIN players ON match_player_stats.player_id = players.player_id 
+WHERE players.first_name = 'Taylor' AND players.last_name = 'Walker' 
+AND EXTRACT(YEAR FROM match_date) = 2022;
+2025-04-14T07:02:52.693Z [info] ::ffff:127.0.0.1 - - [14/Apr/2025:07:02:52 +0000] "POST /api/query HTTP/1.1" 500 666 "http://localhost:5173/" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"

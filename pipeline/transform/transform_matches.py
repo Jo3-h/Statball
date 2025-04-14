@@ -3,6 +3,8 @@ from config import generate_entity_id
 
 def transform_matches(matches_data: dict) -> pd.DataFrame:
 
+    print('-----> Transforming match data', end='\n\n')
+
     matches_df = pd.DataFrame(matches_data)
 
     # Strip leading and trailing whitespace from all entries
@@ -27,5 +29,7 @@ def transform_matches(matches_data: dict) -> pd.DataFrame:
 
     # create column for home_win
     matches_df['home_win'] = (matches_df['home_score'] > matches_df['away_score']).astype(bool)
+
+    print('-----> Finished transforming match data\n')
 
     return matches_df

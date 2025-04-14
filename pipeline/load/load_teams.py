@@ -5,6 +5,8 @@ from logs import export_df
 
 def load_teams(teams_df: pd.DataFrame, delete: bool = False) -> bool:
 
+    print('-----> Loading teams data', end='\n\n')
+
     # Define the connection parameters
 
     db_url = f"postgresql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
@@ -25,9 +27,13 @@ def load_teams(teams_df: pd.DataFrame, delete: bool = False) -> bool:
                 row_df.to_sql("teams", connection, if_exists="append", index=False)
             except Exception as e:
                 problematic_rows.append((index, row, str(e)))
+            
+            print(f'\tLoading team {index + 1}')
 
     if problematic_rows:
         problem_df = pd.DataFrame([row for index, row, error in problematic_rows])
         export_df(problem_df, 'problematic_teams_rows')
+
+    print('-----> Finished loading teams data', end='\n\n')
 
     return True

@@ -5,6 +5,8 @@ from config import generate_entity_id, TESTING
 
 def extract_stats(matches_data: pd.DataFrame) -> list:
 
+    print('-----> Extracting game stats from AFL TABLES website', end='\n\n')
+
     stats_data = []
 
     if TESTING: 
@@ -16,7 +18,7 @@ def extract_stats(matches_data: pd.DataFrame) -> list:
         url = url.replace('..', 'https://afltables.com/afl/')
         response = requests.get(url)
 
-        print(f"Extracting stats for match from {url}", end='\t')
+        print(f"\tExtracting stats for match from {url}", end='\t')
         if response.status_code != 200:
             print(f"Error: {response.status_code}")
             continue
@@ -118,13 +120,13 @@ def extract_stats(matches_data: pd.DataFrame) -> list:
                 except:
                     pass
 
-                print("Success Away", end='\t')
+                print("Success Away")
                 stats_data.append(player_stats)
         except Exception as e:
-            print("Failed Away", end='\t')
+            print("Failed Away")
             if TESTING:
                 print(f"Error: {e} -> url: {url}")
 
-    print('\n')
+    print('-----> Finished extracting game stats\n')
 
     return stats_data

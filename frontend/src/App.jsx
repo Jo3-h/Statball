@@ -1,11 +1,12 @@
 import { useState } from "react";
+import DynamicTable from "./components/DynamicTable";
 import "./App.css";
 
 function App() {
   const [query, setQuery] = useState("");
   const [result, setResult] = useState("");
   const [displayResult, setDisplayResult] = useState(true);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   // Function to simulate a delay
   const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -86,6 +87,9 @@ function App() {
           </div>
         )}
         {/** Element to render results of the query */}
+        {displayResult && result?.result && Array.isArray(result.result) && (
+          <DynamicTable data={result.result} />
+        )}
       </div>
     </>
   );

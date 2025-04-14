@@ -11,6 +11,8 @@ def age_to_timedelta(age_str):
 
 def transform_players(players_data: dict) -> pd.DataFrame:
 
+    print('-----> Transforming player data', end='\n\n')
+
     players_df = pd.DataFrame(players_data)
 
     # Strip leading and trailing whitespace from all entries
@@ -42,5 +44,7 @@ def transform_players(players_data: dict) -> pd.DataFrame:
     players_df['player_id_seed'] = players_df['name'] + players_df['team'] + players_df['number'].astype(str)
     players_df['player_id'] = players_df['player_id_seed'].apply(lambda x: generate_entity_id(x))
     players_df.drop(columns=['player_id_seed', 'team'], inplace=True)
+    
+    print('-----> Finished transforming player data\n')
 
     return players_df

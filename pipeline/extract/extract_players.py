@@ -4,11 +4,13 @@ from bs4 import BeautifulSoup as bs
 
 def extract_players():
 
+    print('-----> Extracting players from AFL TABLES website', end='\n\n')
+
     players_data = []
 
     # read the html from the url
     for year in range(2010, 2026):
-        print(f"Extracting players for {year} from {PLAYERS_URL}/{year}.html")
+        print(f"\tExtracting players for {year} from {PLAYERS_URL}/{year}.html")
         response = requests.get(f"{PLAYERS_URL}/{year}.html")
         if response.status_code != 200:
             print(f"Error: {response.status_code}")
@@ -34,7 +36,7 @@ def extract_players():
                 response = requests.get(f'https://afltables.com/afl/stats/players/{name[1][0]}/{name[1]}_{name[0]}.html')
                 if response.status_code != 200:
                     continue
-                print(f"Extracting data for {player['name']} from {response.url}")
+                print(f"\t\tExtracting data for {player['name']} from {[player['team']]}")
                 soup = bs(response.text, 'html.parser')
 
                             # Extract data following specific <b> elements
@@ -59,5 +61,7 @@ def extract_players():
                     player['weight'] = weight_element.next_sibling.strip()
 
                 players_data.append(player)
+
+    print('-----> Finished extracting players\n')
 
     return players_data
