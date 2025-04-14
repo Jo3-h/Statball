@@ -73,7 +73,6 @@ function App() {
             Execute
           </button>
         </div>
-        <span className="w-full h-2 bg-medium_display" />{" "}
         {/** Delete this element */}
         {/** Element to render when the content is loading from the backend */}
         {loading && (
